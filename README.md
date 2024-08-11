@@ -1,6 +1,8 @@
 # HeadsBounty
 A light-weight Minecraft Plugin that puts bounty on a person's head!
 
+More Info & Download [Here](https://www.spigotmc.org/resources/headsbounty.118824/)
+
 # Dependencies
    [Vault](https://www.spigotmc.org/resources/vault.34315/)
 
