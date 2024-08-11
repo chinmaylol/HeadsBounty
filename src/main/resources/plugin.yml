@@ -8,4 +8,5 @@ description: A Heads-Bounty Plugin
 website: plugins.chinmay.lol
 commands:
   hbr:
+    permission: headsbounty.reload
     description: Reload HeadsBounty Configuration
