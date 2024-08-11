@@ -44,7 +44,12 @@ public class DeathEvent implements Listener {
                     .replace("%amount%", headsBounty.getEconomy().format(amount)))).collect(Collectors.toList());
             meta.setLore(lore);
             skull.setItemMeta(meta);
-            killer.getInventory().addItem(skull);
+
+            if(killer.getInventory().firstEmpty() != -1) {
+                killer.getInventory().addItem(skull);
+            } else {
+                killer.getWorld().dropItemNaturally(killer.getLocation(), skull);
+            }
         }
     }
 
