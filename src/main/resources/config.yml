@@ -1,0 +1,16 @@
+# use https://wiki.ess3.net/mc/ if you don't know how to use color codes
+# variables/placeholders:
+#   - %victim% - Name of the player who died
+#   - %player% - name of the player who is redeeming the skull
+#   - %amount% - the amount which the skull contains
+
+skull-item-name: '&6&l%victim%''s Skull'
+skull-redeem-message: '&a&l(!) &aYou Redeemed a skull and received &a&n%amount%'
+victim-message: '&c&l(!) &c%player% &cRedeemed your skull and you lost &c&n%amount%'
+skull-item-lore:
+  - '&e%victim% was killed by %player%'
+  - '&eRight click to redeem this skull'
+
+percentage: 0.05 # percentage of the victim's balance which will be given to the redeemer
+# write in division format ex. default is 5% (since 5% = 5/100 = 0.05).
+

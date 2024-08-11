@@ -1,0 +1,11 @@
+name: HeadsBounty
+version: '${project.version}'
+main: org.chinmay.headsbounty.HeadsBounty
+api-version: '1.21'
+depend: [Vault]
+authors: [chinmay]
+description: A Heads-Bounty Plugin
+website: plugins.chinmay.lol
+commands:
+  hbr:
+    description: Reload HeadsBounty Configuration
