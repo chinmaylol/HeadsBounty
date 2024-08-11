@@ -13,7 +13,7 @@ public class ReloadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Player player = (Player) commandSender;
-        if (!player.hasPermission("bountyheads.reload")) {
+        if (!player.hasPermission("headsbounty.reload")) {
             player.sendMessage(CC.translate("&c&l(!) &cYou do not have permission to use this command"));
         } else {
             headsBounty.reloadConfig();
