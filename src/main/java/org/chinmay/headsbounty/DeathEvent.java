@@ -45,7 +45,11 @@ public class DeathEvent implements Listener {
                 newlore.add(line);
             }
             meta.setLore(newlore);
-                skull.setItemMeta(meta); 
+                skull.setItemMeta(meta);
+            if(killer.getInventory().firstEmpty() != -1) {
                 killer.getInventory().addItem(skull);
-            }}}
+            } else {
+                killer.getWorld().dropItemNaturally(killer.getLocation(), skull);
+            }
 
+            }}}
